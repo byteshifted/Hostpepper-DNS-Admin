@@ -1,4 +1,4 @@
-# PowerDNS-Admin
+# Hostpepper DNS-Admin
 
 A PowerDNS web interface with advanced features.
 
