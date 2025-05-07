@@ -20,8 +20,11 @@
 <body class="hold-transition login-page">
     <div class="login-box">
         <div class="card card-outline card-primary shadow">
-            <img src="{{ url_for('static', filename='img/favicon.png') }}" alt="">
-            <div class="card-header text-center">
+            <div style="text-align: center;">
+                <img src="{{ url_for('static', filename='img/logo.png') }}" width="195px" alt="">
+            </div>
+
+            <!-- <div class="card-header text-center">
                 <a href="{{ url_for('index.index') }}" class="h3">
                     {% if SETTING.get('site_name') %}
                     {{ SITE_NAME }}
@@ -29,7 +32,7 @@
                     <b>PowerDNS</b>-Admin
                     {% endif %}
                 </a>
-            </div>
+            </div> -->
             <div class="card-body login-card-body">
                 {% if error %}
                 <div class="alert alert-danger alert-dismissible">
@@ -53,10 +56,10 @@
                         <span class="help-block with-errors"></span>
                     </div>
                     {% if SETTING.get('otp_field_enabled') %}
-                    <div class="form-group">
+                    <!-- <div class="form-group">
                         <input type="otptoken" class="form-control" placeholder="OTP Token" name="otptoken"
                             autocomplete="off">
-                    </div>
+                    </div> -->
                     {% endif %}
                     {% if SETTING.get('ldap_enabled') and SETTING.get('local_db_enabled') %}
                     <div class="form-group">

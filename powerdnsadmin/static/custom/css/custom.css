@@ -4,7 +4,7 @@
 }
 
 table td {
-    font-family:'Roboto Mono' !important;
+    font-family: 'Roboto Mono' !important;
 }
 
 /*Fit default macbook screen*/
@@ -18,19 +18,22 @@ table td {
 
 /* Pretty JSON */
 .json-pre {
-   background-color: ghostwhite;
-   border: 1px solid silver;
-   padding: 10px 20px;
-   margin: 20px;
+    background-color: ghostwhite;
+    border: 1px solid silver;
+    padding: 10px 20px;
+    margin: 20px;
 }
+
 .json-key {
-   color: brown;
+    color: brown;
 }
+
 .json-value {
-   color: navy;
+    color: navy;
 }
+
 .json-string {
-   color: olive;
+    color: olive;
 }
 
 .user-footer {
@@ -46,22 +49,50 @@ table td {
     width: 100%;
 }
 
-.sidebar .image { padding-top: 0.7em; }
-.sidebar .info { color: #fff; }
-.sidebar .info p { margin: 0; }
-.sidebar .info a { font-size: 0.8em; }
+.sidebar .image {
+    padding-top: 0.7em;
+}
+
+.sidebar .info {
+    color: #fff;
+}
+
+.sidebar .info p {
+    margin: 0;
+}
+
+.sidebar .info a {
+    font-size: 0.8em;
+}
 
 /* Global Styles */
-table.records thead th, table.records tbody td { text-align: center; vertical-align: middle; }
-table.records thead th:last-of-type { width: 50px; }
-div.records > div.dataTables_wrapper > div.row:first-of-type { margin: 0 0.5em 0 0.5em; }
-div.records > div.dataTables_wrapper > div.row:last-of-type { margin: 0.4em 0.5em 0.4em 0.5em; }
-div.records > div.dataTables_wrapper table.dataTable { margin: 0 !important; }
+table.records thead th,
+table.records tbody td {
+    text-align: center;
+    vertical-align: middle;
+}
+
+table.records thead th:last-of-type {
+    width: 50px;
+}
+
+div.records>div.dataTables_wrapper>div.row:first-of-type {
+    margin: 0 0.5em 0 0.5em;
+}
+
+div.records>div.dataTables_wrapper>div.row:last-of-type {
+    margin: 0.4em 0.5em 0.4em 0.5em;
+}
+
+div.records>div.dataTables_wrapper table.dataTable {
+    margin: 0 !important;
+}
 
 .diff {
     font-family: monospace;
     padding: 0 0.2em;
 }
+
 .diff::before {
     content: "\00a0";
     padding-right: 0.1em;
@@ -70,6 +101,7 @@ div.records > div.dataTables_wrapper table.dataTable { margin: 0 !important; }
 .diff-deletion {
     background-color: lightcoral;
 }
+
 .diff-deletion::before {
     content: "-";
 }
@@ -77,6 +109,11 @@ div.records > div.dataTables_wrapper table.dataTable { margin: 0 !important; }
 .diff-addition {
     background-color: lightgreen;
 }
+
 .diff-addition::before {
     content: "+";
+}
+
+[class*="sidebar-dark-"] {
+    background-color: #000000 !important;
 }
